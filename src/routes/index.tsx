@@ -85,20 +85,15 @@ function HomePage() {
   return (
     <main>
       <section className="relative isolate min-h-[calc(100svh-4.5rem)] overflow-hidden bg-primary text-primary-foreground">
-        <div className="pointer-events-none absolute inset-0 opacity-30" aria-hidden="true">
-          <div className="absolute -right-24 top-16 size-80 rounded-full border border-accent/45 sm:size-[30rem]" />
-          <div className="absolute -right-2 top-40 size-48 rounded-full border border-primary-foreground/25 sm:size-72" />
-          <div className="absolute bottom-0 left-[58%] h-1/2 w-px bg-primary-foreground/20" />
-          <div className="absolute bottom-24 left-[48%] h-px w-1/2 bg-accent/40" />
-        </div>
+        <HeroDataGraphic />
         <div className="relative mx-auto flex min-h-[calc(100svh-4.5rem)] max-w-7xl flex-col justify-center px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
           <p className="mb-7 font-display text-xs font-bold uppercase tracking-[0.16em] text-accent">
             Technology · Data · Business
           </p>
-          <h1 className="max-w-5xl font-display text-5xl font-bold leading-[1.06] sm:text-7xl lg:text-[5.5rem]">
+          <h1 className="max-w-5xl font-display text-5xl font-bold leading-[1.06] sm:text-7xl lg:max-w-2xl lg:text-7xl">
             Clear thinking for technology, data and business.
           </h1>
-          <div className="mt-8 max-w-3xl space-y-3 text-base leading-7 text-primary-foreground/78 sm:text-lg sm:leading-8">
+          <div className="mt-8 max-w-3xl lg:max-w-xl space-y-3 text-base leading-7 text-primary-foreground/78 sm:text-lg sm:leading-8">
             <p>
               Juleco is a South African consultancy that helps organisations choose the right
               technology, make sense of their data and run their operations better.
@@ -202,5 +197,45 @@ function HomePage() {
         </div>
       </section>
     </main>
+  );
+}
+function HeroDataGraphic() {
+  const bars = [38, 52, 46, 64, 58, 76, 70, 88];
+  const line = [70, 62, 66, 50, 54, 38, 42, 24];
+  const pts = line.map((y, i) => `${40 + i * 44},${y + 130}`).join(" ");
+  const nodes = [
+    [70, 40], [150, 70], [230, 30], [310, 80], [370, 40],
+  ];
+  return (
+    <div
+      className="pointer-events-none absolute inset-y-0 right-0 hidden w-[44%] items-center justify-center pr-10 lg:flex"
+      aria-hidden="true"
+    >
+      <svg viewBox="0 0 420 420" className="w-full max-w-[30rem]" fill="none">
+        <defs>
+          <pattern id="hero-grid" width="21" height="21" patternUnits="userSpaceOnUse">
+            <path d="M21 0H0V21" stroke="currentColor" strokeOpacity="0.08" />
+          </pattern>
+        </defs>
+        <rect x="10" y="10" width="400" height="400" rx="14" fill="url(#hero-grid)" stroke="currentColor" strokeOpacity="0.18" />
+        {nodes.slice(1).map(([x, y], i) => (
+          <line key={i} x1={nodes[i][0]} y1={nodes[i][1]} x2={x} y2={y} stroke="currentColor" strokeOpacity="0.3" strokeDasharray="3 4" />
+        ))}
+        {nodes.map(([x, y], i) => (
+          <circle key={i} cx={x} cy={y} r={i === 2 ? 7 : 4.5} className={i === 2 ? "fill-accent" : "fill-primary-foreground"} fillOpacity={i === 2 ? 1 : 0.7} />
+        ))}
+        <path d={`M${pts.split(" ").join(" L")}`} stroke="var(--accent)" strokeWidth="2.5" strokeLinejoin="round" />
+        {line.map((y, i) => (
+          <circle key={i} cx={40 + i * 44} cy={y + 130} r="3" className="fill-accent" />
+        ))}
+        <line x1="30" y1="380" x2="390" y2="380" stroke="currentColor" strokeOpacity="0.3" />
+        {bars.map((h, i) => (
+          <rect key={i} x={28 + i * 44} y={380 - h * 1.4} width="24" height={h * 1.4} rx="3" className="fill-primary-foreground" fillOpacity={0.1 + i * 0.05} />
+        ))}
+        <rect x="270" y="235" width="120" height="44" rx="6" className="fill-primary-foreground" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.2" />
+        <rect x="282" y="248" width="40" height="5" rx="2.5" className="fill-accent" />
+        <rect x="282" y="262" width="80" height="4" rx="2" className="fill-primary-foreground" fillOpacity="0.35" />
+      </svg>
+    </div>
   );
 }
