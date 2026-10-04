@@ -79,8 +79,8 @@ export function SiteFooter() {
             JULECO
           </Link>
           <p className="mt-4 max-w-2xl text-sm leading-6 text-footer-muted">
-            © 2026 [Juleco (Pty) Ltd]. Registration no. [20XX/XXXXXX/07]. [Cape Town], South
-            Africa.
+            © 2026 Juleco (Pty) Ltd. Registration no. 2020/933902/07.{"\u00a0\n"}
+            Cape Town, South Africa.
           </p>
         </div>
         <nav aria-label="Legal and contact" className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
