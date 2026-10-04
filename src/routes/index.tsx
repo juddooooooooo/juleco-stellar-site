@@ -232,9 +232,9 @@ function HeroDataGraphic() {
         {bars.map((h, i) => (
           <rect key={i} x={28 + i * 44} y={380 - h * 1.4} width="24" height={h * 1.4} rx="3" className="fill-primary-foreground" fillOpacity={0.1 + i * 0.05} />
         ))}
-        <rect x="270" y="235" width="120" height="44" rx="6" className="fill-primary-foreground" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.2" />
-        <rect x="282" y="248" width="40" height="5" rx="2.5" className="fill-accent" />
-        <rect x="282" y="262" width="80" height="4" rx="2" className="fill-primary-foreground" fillOpacity="0.35" />
+        <rect x="40" y="215" width="120" height="44" rx="6" className="fill-primary-foreground" fillOpacity="0.08" stroke="currentColor" strokeOpacity="0.2" />
+        <rect x="52" y="228" width="40" height="5" rx="2.5" className="fill-accent" />
+        <rect x="52" y="242" width="80" height="4" rx="2" className="fill-primary-foreground" fillOpacity="0.35" />
       </svg>
     </div>
   );
