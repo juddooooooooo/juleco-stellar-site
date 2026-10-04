@@ -191,7 +191,7 @@ function HomePage() {
             </p>
             <div className="mt-8 space-y-2 text-sm text-primary-foreground/80">
               <p>admin@juleco.co.za</p>
-              <p>[Cape Town, South Africa]</p>
+              <p>Cape Town, South Africa</p>
             </div>
           </div>
           <Button asChild variant="brass" size="lg" className="w-fit">
