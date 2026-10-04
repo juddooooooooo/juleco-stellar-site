@@ -133,6 +133,20 @@ function HomePage() {
         </div>
       </section>
 
+      <section id="approach" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
+        <p className="section-kicker">Approach</p>
+        <h2 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">How we work</h2>
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+          {steps.map(([title, description], index) => (
+            <article key={title} className="border-l border-border pl-6 lg:pr-8">
+              <span className="font-display text-sm font-bold text-accent-strong">0{index + 1}</span>
+              <h3 className="mt-5 font-display text-2xl font-bold text-primary">{title}</h3>
+              <p className="mt-3 leading-7 text-muted-foreground">{description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="about" className="border-y border-border bg-secondary">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-2 lg:gap-24 lg:px-12">
           <div>
@@ -159,20 +173,6 @@ function HomePage() {
               <circle cx="255" cy="35" r="8" fill="var(--color-accent)" />
             </svg>
           </div>
-        </div>
-      </section>
-
-      <section id="approach" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
-        <p className="section-kicker">Approach</p>
-        <h2 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">How we work</h2>
-        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
-          {steps.map(([title, description], index) => (
-            <article key={title} className="border-l border-border pl-6 lg:pr-8">
-              <span className="font-display text-sm font-bold text-accent-strong">0{index + 1}</span>
-              <h3 className="mt-5 font-display text-2xl font-bold text-primary">{title}</h3>
-              <p className="mt-3 leading-7 text-muted-foreground">{description}</p>
-            </article>
-          ))}
         </div>
       </section>
 
