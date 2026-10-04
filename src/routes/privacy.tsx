@@ -23,7 +23,7 @@ function PrivacyPage() {
     <LegalPage
       eyebrow="Legal"
       title="Privacy Policy"
-      intro="This policy explains how [JuleCo (Pty) Ltd] handles personal information when you contact us or use this website."
+      intro="This policy explains how JuleCo (Pty) Ltd handles personal information when you contact us or use this website."
     >
       <h2>What we collect</h2>
       <p>
