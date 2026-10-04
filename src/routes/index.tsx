@@ -60,13 +60,13 @@ const steps = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Juleco | Technology, Data & Business Consulting" },
+      { title: "JuleCo | Technology, Data & Business Consulting" },
       {
         name: "description",
         content:
-          "Juleco is a South African consultancy helping organisations choose technology, make sense of data and improve operations.",
+          "JuleCo is a South African consultancy helping organisations choose technology, make sense of data and improve operations.",
       },
-      { property: "og:title", content: "Juleco | Technology, Data & Business Consulting" },
+      { property: "og:title", content: "JuleCo | Technology, Data & Business Consulting" },
       {
         property: "og:description",
         content:
@@ -95,7 +95,7 @@ function HomePage() {
           </h1>
           <div className="mt-8 max-w-3xl lg:max-w-xl space-y-3 text-base leading-7 text-primary-foreground/78 sm:text-lg sm:leading-8">
             <p>
-              Juleco is a South African consultancy that helps organisations choose the right
+              JuleCo is a South African consultancy that helps organisations choose the right
               technology, make sense of their data and run their operations better.
             </p>
             <p>We work alongside your team from the first conversation through to delivery.</p>
@@ -151,9 +151,9 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-2 lg:gap-24 lg:px-12">
           <div>
             <p className="section-kicker">Who we are</p>
-            <h2 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">About Juleco</h2>
+            <h2 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">About JuleCo</h2>
             <div className="mt-7 space-y-5 text-lg leading-8 text-muted-foreground">
-              <p>Juleco combines technical skill with commercial sense.</p>
+              <p>JuleCo combines technical skill with commercial sense.</p>
               <p>
                 We are independent, hands-on and honest about what will and won't work, and we
                 measure success by what changes in your business, not by the size of the report.
