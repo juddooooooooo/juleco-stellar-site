@@ -203,7 +203,7 @@ function HeroDataGraphic() {
   const bars = [38, 52, 46, 64, 58, 76, 70, 88];
   const line = [70, 62, 66, 50, 54, 38, 42, 24];
   const pts = line.map((y, i) => `${40 + i * 44},${y + 130}`).join(" ");
-  const nodes = [
+  const nodes: [number, number][] = [
     [70, 40], [150, 70], [230, 30], [310, 80], [370, 40],
   ];
   return (
@@ -219,7 +219,7 @@ function HeroDataGraphic() {
         </defs>
         <rect x="10" y="10" width="400" height="400" rx="14" fill="url(#hero-grid)" stroke="currentColor" strokeOpacity="0.18" />
         {nodes.slice(1).map(([x, y], i) => (
-          <line key={i} x1={nodes[i][0]} y1={nodes[i][1]} x2={x} y2={y} stroke="currentColor" strokeOpacity="0.3" strokeDasharray="3 4" />
+          <line key={i} x1={nodes[i]![0]} y1={nodes[i]![1]} x2={x} y2={y} stroke="currentColor" strokeOpacity="0.3" strokeDasharray="3 4" />
         ))}
         {nodes.map(([x, y], i) => (
           <circle key={i} cx={x} cy={y} r={i === 2 ? 7 : 4.5} className={i === 2 ? "fill-accent" : "fill-primary-foreground"} fillOpacity={i === 2 ? 1 : 0.7} />
