@@ -19,7 +19,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           to="/"
-          aria-label="Juleco home"
+          aria-label="JuleCo home"
           className="font-display text-xl font-extrabold tracking-[0.14em] text-primary"
         >
           JULECO
@@ -79,7 +79,7 @@ export function SiteFooter() {
             JULECO
           </Link>
           <p className="mt-4 max-w-2xl text-sm leading-6 text-footer-muted">
-            © 2026 Juleco (Pty) Ltd. Registration no. 2020/933902/07{"\u00a0\n"}
+            © 2026 JuleCo (Pty) Ltd. Registration no. 2020/933902/07{"\u00a0\n"}
             Cape Town, South Africa
           </p>
         </div>

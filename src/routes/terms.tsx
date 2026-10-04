@@ -5,10 +5,10 @@ import { LegalPage } from "@/components/legal-page";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Service | Juleco" },
-      { name: "description", content: "Terms governing your use of the Juleco informational website." },
-      { property: "og:title", content: "Terms of Service | Juleco" },
-      { property: "og:description", content: "The terms that apply when you access and use the Juleco website." },
+      { title: "Terms of Service | JuleCo" },
+      { name: "description", content: "Terms governing your use of the JuleCo informational website." },
+      { property: "og:title", content: "Terms of Service | JuleCo" },
+      { property: "og:description", content: "The terms that apply when you access and use the JuleCo website." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/terms" },
       { name: "twitter:card", content: "summary" },
@@ -23,7 +23,7 @@ function TermsPage() {
     <LegalPage
       eyebrow="Legal"
       title="Terms of Service"
-      intro="These terms apply when you access or use the Juleco website."
+      intro="These terms apply when you access or use the JuleCo website."
     >
       <h2>General information</h2>
       <p>
@@ -41,14 +41,14 @@ function TermsPage() {
 
       <h2>Ownership</h2>
       <p>
-        Unless stated otherwise, the website and its content belong to Juleco. You may view and share
+        Unless stated otherwise, the website and its content belong to JuleCo. You may view and share
         links to the site, but you may not copy, publish or use its content commercially without our
         written permission.
       </p>
 
       <h2>Liability</h2>
       <p>
-        To the extent permitted by law, Juleco is not liable for loss or damage arising from reliance
+        To the extent permitted by law, JuleCo is not liable for loss or damage arising from reliance
         on this website's general content, or from the website being unavailable. Nothing in these
         terms excludes liability that cannot lawfully be excluded.
       </p>
@@ -56,7 +56,7 @@ function TermsPage() {
       <h2>External links</h2>
       <p>
         This website may link to websites operated by others. Those links are provided for
-        convenience and do not mean that Juleco endorses or controls the linked website, its content
+        convenience and do not mean that JuleCo endorses or controls the linked website, its content
         or its practices.
       </p>
 

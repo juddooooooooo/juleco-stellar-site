@@ -5,10 +5,10 @@ import { LegalPage } from "@/components/legal-page";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | Juleco" },
-      { name: "description", content: "How Juleco handles personal information under South Africa's POPIA." },
-      { property: "og:title", content: "Privacy Policy | Juleco" },
-      { property: "og:description", content: "How Juleco collects, uses, protects and deletes personal information." },
+      { title: "Privacy Policy | JuleCo" },
+      { name: "description", content: "How JuleCo handles personal information under South Africa's POPIA." },
+      { property: "og:title", content: "Privacy Policy | JuleCo" },
+      { property: "og:description", content: "How JuleCo collects, uses, protects and deletes personal information." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/privacy" },
       { name: "twitter:card", content: "summary" },
@@ -23,7 +23,7 @@ function PrivacyPage() {
     <LegalPage
       eyebrow="Legal"
       title="Privacy Policy"
-      intro="This policy explains how [Juleco (Pty) Ltd] handles personal information when you contact us or use this website."
+      intro="This policy explains how [JuleCo (Pty) Ltd] handles personal information when you contact us or use this website."
     >
       <h2>What we collect</h2>
       <p>
