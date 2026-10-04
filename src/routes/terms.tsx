@@ -27,7 +27,7 @@ function TermsPage() {
     >
       <h2>General information</h2>
       <p>
-        This website provides general information about [Juleco (Pty) Ltd] and its services. The
+        This website provides general information about JuleCo (Pty) Ltd and its services. The
         content is not professional, legal, financial or other specialist advice, and should not be
         treated as a substitute for advice based on your particular circumstances.
       </p>
